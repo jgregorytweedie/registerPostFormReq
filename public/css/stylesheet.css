@@ -1,0 +1,38 @@
+body {
+  /* setting a background to the full site height, then adding a background to make it fancy.*/
+  height: 100vh;
+  background-image: url("https://picsum.photos/id/114/2000/2000");
+  background-position: center;
+  }
+/*for the heading, I wanted to make it front and center so I added flexbox and justify content and text-align to center everything. Initially I put in align items but then realized it would make the box center, not the font itself so I added text-align.*/
+heading {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ }
+heading h1 {
+  color: black; 
+  font-family: 'Commissioner',       sans-serif;
+}
+/*setting fieldset border to 0 is to get rid of the border around the whole form.*/
+fieldset {
+  border: 0;
+  display: flex;
+}
+/*this is to make the asterisks red.*/
+abbr {
+  color: red;
+}
+p {
+  font-family: 'IBM Plex Serif', serif;
+}
+/*There are a couple ways of assigning font types to forms, like for example when typing out forms I could put the "legend" and "p" tags with an h2 or something so then I can call upon the h2 to change both fonts, but also in the future if I want to make the fonts different, I prefer this method of naming legend AND P tags in css. makes it more flexible IMO*/
+legend {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 20px;
+}
+
+
+
+
